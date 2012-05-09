@@ -1,0 +1,43 @@
+/* CSS for links */
+.links {
+	font-family: "coquette",arial,verdana,sans-serif;
+	border-top: solid; 
+	border-top-color: #C0C0C0;
+	border-top-width: 1px;
+	border-bottom: solid;
+	border-bottom-color: #C0C0C0;
+	border-bottom-width: 1px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.links span {
+	padding-right: 15px;
+}
+	
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+	
+a:visited {
+	color: #333399;
+	text-decoration: none;
+}
+
+a:link:hover {
+	background-color: #e9e9e9;
+	text-decoration: underline;
+}
+
+a:link:focus {
+	background-color: #e9e9e9;
+	text-decoration: underline;
+}
+	
+a:active {
+	color: #0033ff;
+	text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+/* CSS for Fermentation Station */
+@import "login.css";
+@import "links.css";
+body {
+	color:#000000;
+	background-color:#ffffff;
+	font-family:arial, verdana, sans-serif;
+}
+
+h1 {
+	font-size:36pt;
+	font-family: "coquette",arial,verdana,sans-serif;
+}
+
+h2 {
+	font-size:24pt;
+	font-family: "coquette",arial,verdana,sans-serif;
+}
+
+p.intro:first-letter {
+	font-size: 36pt;
+	font-family: "abril-text";
+	max-width: 850px;
+}
+
+p {
+	font-size: 12pt;
+	font-family: "abril-text";
+	max-width: 850px;
+}
+
+div.footer {
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	font-size: 12px
+}
+
+#footerList li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
