@@ -41,3 +41,14 @@ a:active {
 	color: #0033ff;
 	text-decoration: underline;
 }
+
+a.contact {
+	color: #000000;
+	text-decoration: none;
+}
+
+a.contact:link:hover {
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+}

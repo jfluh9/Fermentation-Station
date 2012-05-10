@@ -9,13 +9,22 @@ body {
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 250%;
 	font-family: "coquette",arial,verdana,sans-serif;
+	margin-bottom: 0px;
+}
+
+h1:first-letter {
+	font-size: 300%;
 }
 
 h2 {
 	font-size: 150%;
 	font-family: "coquette",arial,verdana,sans-serif;
+}
+
+.links {
+	font-size: 150%;
 }
 
 p.intro:first-letter {
@@ -27,13 +36,35 @@ p.intro {
 	line-height: 1.5em;
 }
 
+#tempBox1 {
+	border: 1px solid #000000;
+	height: 300px;
+	width: 300px;
+	padding: 5px;
+	margin: 5px;
+	position: relative;
+	left: 550px;
+	top: -300px;
+}
+
+#tempBox2 {
+	border: 1px solid #000000;
+	height: 300px;
+	width: 300px;
+	padding: 5px;
+	margin: 5px;
+	position: relative;
+	left: 950px;
+	top: -617px;
+}
+
 div.footer {
 	position: fixed;
 	bottom: 0px;
 	text-align: center;
 	width: 100%;
 	padding: 0px;
-	font-size: 12px
+	font-size: 75%;
 }
 
 #footerList li {
