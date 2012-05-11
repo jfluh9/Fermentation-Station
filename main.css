@@ -73,17 +73,3 @@ p.intro {
 	top: -617px;
 }
 
-div.footer {
-	position: fixed;
-	bottom: 0px;
-	text-align: center;
-	width: 100%;
-	padding: 0px;
-	font-size: 75%;
-}
-
-#footerList li {
-	display: inline;
-	list-style-type: none;
-	padding-right: 20px;
-}

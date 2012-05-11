@@ -1,5 +1,5 @@
 /* CSS for links */
-.links {
+div.links {
 	font-family: "coquette",arial,verdana,sans-serif;
 	border-top: solid; 
 	border-top-color: #C0C0C0;
@@ -15,8 +15,10 @@
 	top: -30px;
 }
 
-.links span {
-	padding-right: 15px;
+#linksList li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
 }
 	
 a:link {

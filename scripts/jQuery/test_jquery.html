@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link type="text/css" href="jQuery_UI/css/dot-luv/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="jQuery_UI/js/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="test_jquery.js"></script>
+  </head>
+  <body>
+    <h1>jQuery</h1>
+    <div id="dialog" title="Login">
+      <form name="frmLogin">
+	<label for="usrName" title="User Name">User Name:</label>
+	<br />
+	  <input size="27" maxlength="27" id="usrName" type="text"
+	    onkeyup="if (this.value.length>=5) this.form.pwd.focus();" />
+	<br />
+	<label for="pwd" title="Password">Password:</label>
+	<br />
+	  <input size="27" maxlength="27" id="pwd" type="password"
+	    onkeyup="if (this.value.length>=14) this.form.submit.focus();" />
+	<button type="submit" id="submit">Login</button>
+      </form>
+    </div>
+
+  </body>
+</html>

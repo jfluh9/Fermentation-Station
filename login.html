@@ -1,32 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
+		<script type="text/javascript" src="http://use.typekit.com/ieb6mbp.js"></script> <!--script for Typekit fonts-->
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script> <!--script for Typekit fonts-->
 		<title>Login to the Fermentation Station</title>
-		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link type="text/css" href="footer.css" rel="stylesheet" />
+		<link type="text/css" href="scripts/jQuery/jQuery_UI/css/dot-luv/jquery-ui-1.8.20.custom.css" rel="stylesheet" /> <!--CSS for the jQuery UI plugin-->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-		<script type="text/javascript" src="http://use.typekit.com/ieb6mbp.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="scripts/jQuery/jquery-1.7.2.js"></script> <!--script for jQuery plugin-->
+		<script type="text/javascript" src="scripts/jQuery/jQuery_UI/js/jquery-ui-1.8.20.custom.min.js"></script> <!--script for jQuery UI plugin-->
+		<script type="text/javascript" src="scripts/jQuery/test_jquery.js"></script> <!--script for the login modal box-->
 	</head>
-		<body>
-			<h1 title="Login" id="loginTitle"><span>Login</span></h1>
+		<body onload="document.frmLogin.usrName.focus();">
+			<!-- I commented the Login header out, as it gets in the way of the modal box <h1 title="Login" id="loginTitle"><span>Login</span></h1> -->
 				<!--This is the login form for my website. It uses two input tags with labels for each-->
-				<form id="frmLogin" onsubmit="validateLogin();" method="post">
-					<label for="usrName" title="User Name">User Name:</label>
-					<br />
-					<input size="27" maxlength="27" id="usrName" type="text" />
-					<br />
-					<label for="pwd" title="Password">Password:</label>
-					<br />
-					<input size="27" maxlength="27" id="pwd" type="password" />
-					<button type="submit">Login</button>
-				</form>
+				<div id="dialog" title="Login">
+					<form name="frmLogin">
+						<label for="usrName" title="User Name">User Name:</label>
+							<br />
+						<input size="27" maxlength="27" id="usrName" type="text"
+							onkeyup="if (this.value.length>=5) this.form.pwd.focus();" />
+							<br />
+						<label for="pwd" title="Password">Password:</label>
+							<br />
+						<input size="27" maxlength="27" id="pwd" type="password"
+							onkeyup="if (this.value.length>=14) this.form.submit.focus();" />
+						<button type="submit" id="submit">Login</button>
+					</form>
+				</div>
 			<div class="footer">
 				<ul id="footerList">
 					<li>&copy; 2012 Jared Rothenfluh</li>
 					<li>|</li>
-					<li>contact</li>
-					<li>|</li>
-					<li>to top</li>
+					<li><a href="mailto:jfluh9@gmail.com" class="contact">contact</a></li>
 				</ul>
 			</div>
 		</body>
