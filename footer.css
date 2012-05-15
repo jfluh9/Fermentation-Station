@@ -13,6 +13,7 @@ div.footer {
 	filter: alpha(opacity=90); 																/* IE6-IE8 */
 }
 
+/*This sets the footer list items out in a horizontal placement */
 #footerList li {
 	display: inline;
 	list-style-type: none;
